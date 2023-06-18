@@ -12,13 +12,11 @@
 
         <div class="col-lg-3">
 
-            <h1 class="my-4">Store</h1>
+            <h1 class="my-4">Каталог</h1>
             <div class="list-group">
-                <a href="#" class="list-group-item">Новинки</a>
-                <a href="#" class="list-group-item">Одежда</a>
-                <a href="#" class="list-group-item">Обувь</a>
-                <a href="#" class="list-group-item">Аксессуары</a>
-                <a href="#" class="list-group-item">Подарки</a>
+                {% for category in categories %}
+                    <a href="#" class="list-group-item">{{ category.name }}</a>
+                {% endfor %}
             </div>
 
         </div>
@@ -59,7 +57,7 @@
                     <div class="card h-100">
                         <a href="#">
                             <img class="card-img-top"
-                                 src="{{ products.image }}"
+                                 src="{{ products.image.url }}"
                                  alt="">
                         </a>
                         <div class="card-body">
@@ -103,7 +101,7 @@
 {% block footer %}
         <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Store 2022</p>
+        <p class="m-0 text-center text-white">Copyright &copy; DrinkNoThink 2023</p>
     </div>
     <!-- /.container -->
 </footer>
