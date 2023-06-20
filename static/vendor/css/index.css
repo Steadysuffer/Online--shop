@@ -5,12 +5,13 @@ body {
     background-size: cover;
     -o-background-size: cover;
     padding-top: 56px;
+    background-color: rgba(148, 147, 147, 0.68);
 }
 
 #start-purchase-btn {
     background-color: #23364e;
     border-color: #23364e;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
 }
 
 #start-purchase-link {
