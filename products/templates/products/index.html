@@ -3,10 +3,11 @@
 
 {% block css %}
         <link href="{% static 'vendor/css/index.css' %}" rel="stylesheet">
+        <link rel="icon" href="static/vendor/favicon.ico" type="image/x-icon">
 {% endblock %}
 
 {% block content %}
-        <section>
+    <section>
     <!--    <div class="alert alert-light text-center" role="alert">-->
     <!--        Информационное сообщение-->
     <!--    </div>-->
@@ -16,9 +17,9 @@
                 <h1 class="mt-5">DrinkNoThink</h1>
                 <p>
                     Новый формат и лучшие зелья на DrinkNoThink.
-                    Бесплатная доставка по всему миру!
+                    Бесплатная доставка по всей России!
                     {% if is_promotion %}
-                        Скидки: до -70% на новинки. -20% новым покупателям.
+                        Скидки: до -30% на новинки. -20% новым покупателям.
                     {% endif %}
                 </p>
                 <button id="start-purchase-btn" type="button" class="btn btn-lg btn-secondary">

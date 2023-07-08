@@ -24,6 +24,9 @@ def products(request, category_id=None, page_number=1):
         'categories': ProductCategory.objects.all(),
         'products': products_paginator,
     }
+
+
+
     return render(request, 'products/products.html', context)
 
 
